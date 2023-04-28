@@ -2,11 +2,10 @@
     margin: 0;
 }
 #menuFixo{
-    background-color: #35398e;
+    background-color: #007acc;
     display: flex;
     align-items: center;
-    position: fixed;
-    margin-top: -200px;
+
 }
 #logoDoMenu{
     width: 100px;
@@ -71,7 +70,7 @@
 }
 .btns:hover{
     background-color: aliceblue;
-    color: #35398e;
+    color: #007acc;
 }
 .btnsDiv{
     margin: 0;
