@@ -11,23 +11,23 @@ header {
     display: flex;
     align-items: center;
 }
-.cardsBox{
-    padding: 10px;
-    margin: 20px 30px 0px 30px;
+.cardsBox {
+    padding: 0.5%;
+    margin: 1.5% 2% 0px 2%;
     border-radius: 10px;
-    background-color:#e0e0e0;
-    -webkit-filter: drop-shadow(0px 0px 10px rgba(0 0 0 / 70%)); 
+    background-color: #e0e0e0;
+    -webkit-filter: drop-shadow(0px 0px 10px rgba(0 0 0 / 70%));
     filter: drop-shadow(0px 0px 10px rgba(0 0 0 / 70%));
-}
-.cardsBoxborder{
-    padding: 4px;
+  }
+  .cardsBoxborder {
+    padding: 0.2%;
     border-radius: 10px;
-    background-color:#007acc;
-}
-.cardsBoxInterna{
+    background-color: #007acc;
+  }
+  .cardsBoxInterna {
     padding: 20px;
     border-radius: 10px;
-    background-color:#e0e0e0;
+    background-color: #e0e0e0;
 }
 img {
     margin: 0 auto;
