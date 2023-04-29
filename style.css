@@ -20,7 +20,7 @@ nav {
     align-items: center;
   }
 
-img {
+.logo {
     margin: 0 auto;
     display: block;
     max-width: 7%;
@@ -30,7 +30,8 @@ img {
   }
   
 .btns{
-    margin-right: 30px;
+    margin-right: 2%;
+    margin-left: -6.5%;
     height: 45px;
     width: 100px;
     background-color: #3c408a;
@@ -50,15 +51,15 @@ img {
     justify-content: space-evenly;
 }
 .cardsBox{
-    padding: 10px;
-    margin: 20px 30px 0px 30px;
+    padding: 0px;
+    margin: 1.5% 2% 0px 2%;
     border-radius: 10px;
     background-color:#e0e0e0;
     -webkit-filter: drop-shadow(0px 0px 10px rgba(0 0 0 / 70%)); 
     filter: drop-shadow(0px 0px 10px rgba(0 0 0 / 70%));
 }
 .cardsBoxborder{
-        padding: 4px;
+        padding: 0%;
         border-radius: 10px;
         background-color:#007acc;
     }
@@ -75,22 +76,25 @@ img {
     flex-wrap: wrap;
   }
   .cardOferta {
-    padding: 10px;
+    padding: 0.7%;
     border-radius: 10px;
     background-color: #e0e0e0;
     -webkit-filter: drop-shadow(0px 0px 10px rgba(0 0 0 / 70%));
     filter: drop-shadow(0px 0px 10px rgba(0 0 0 / 70%));
-    width: 25%;
+    width: 30%;
+    margin-left: 0.1%;
+    margin-bottom: 3%;
   }
   .cardOferdaBorder {
-    padding: 4px;
+    padding: 1.2%;
     border-radius: 10px;
     background-color: #007acc;
   }
   .cardOferdaInterna {
-    padding: 20px;
+    padding: 1.2%;
     border-radius: 10px;
     background-color: #e0e0e0;
+    
   }
   #cardData {
     text-align: center;
