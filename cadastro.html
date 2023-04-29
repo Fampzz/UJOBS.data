@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles/stylePagCadastro.css">
+    <title>Cadastro</title>
+</head>
+<body>
+    <header>
+        <nav>
+          <ul></ul>
+          <div class="menu-right">
+            <img src="assets/Logo.png" alt="Minha imagem">
+          </div>
+        </nav>
+    </header>
+    <div class="cardsBox">
+        <div class="cardsBoxborder">
+            <div class="cardsBoxInterna">
+                <p>Preencha os campos a seguir com a informação necesária.
+                <br>Os campos marcados com * são obrigatórios.</p>
+                <form>
+                    <br>
+                    <label for="nome">Nome:</label>
+                    <br>
+                    <input type="text" placeholder="Nome" id="nome">
+                    <br>
+                    <br>
+                    <label for="sobrenome">Sobrenome:</label>
+                    <br>
+                    <input type="text" placeholder="Sobrenome" id="sobrenome">
+                    <br>
+                    <br>
+                    <label for="dataDeNasc">Data de Nascimento:</label>
+                    <br>
+                    <input type="date" placeholder="Data de nascimento" id="dataDeNasc">
+                    <br>
+                    <br>
+                    <label for="cpf">CPF/CNP-J (Apenas números):</label>
+                    <br>
+                    <input type="number" placeholder="CPF/CNP-J" id="cpf">
+                    <br>
+                    <br>
+                    <label for="profissão">Profissão:</label>
+                    <br>
+                    <input type="text" placeholder="Profissão" id="profissao"> 
+                    <br>
+                    <br>
+                    <label for="telefoneContato">Telefone de Contato (Apenas números):</label>
+                    <br>
+                    <input type="tel" placeholder="xx xxxxxxxxxx">
+                    <br>
+                    <br>
+                    <label for="preco">Preço do Serviço:</label>
+                    <br>
+                    <input type="number" placeholder="R$">
+                    <br>
+                    <br>
+                    <p>Endereço:</p>
+                    <br>
+                    <label for="cep">CEP:</label>
+                    <br>
+                    <input type="text" placeholder="CEP">
+                    <br>
+                    <br>
+                    <label for="rua">Rua (com número):</label>
+                    <br>
+                    <input type="text" placeholder="Rua">
+                    <br>
+                    <br>
+                    <label for="bairro">Bairro:</label>
+                    <br>
+                    <input type="text" placeholder="Bairro">
+                    <br>
+                    <br>
+                    <label for="cidade">Cidade:</label>
+                    <br>
+                    <input type="text" placeholder="Cidade">
+                    <br>
+                    <br>
+                    <label for="estado">Estado:</label>
+                    <br>
+                    <input type="text" placeholder="Estado">
+                    <br>
+                    <div id="botaoDeConfirmacaoDeCadastroDiv">
+                        <button type="submit" onclick="gravarInformacaoEMandarParaJson()" id="botaoDeConfirmacaoDeCadastro">Enviar</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
