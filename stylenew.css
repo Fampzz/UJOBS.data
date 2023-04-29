@@ -1,0 +1,35 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+#menu-superior {
+    background-color: #007acc;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    }
+#menu-superior ul{
+    display: inline-block;
+    align-items: center;
+}
+.btns{
+    height: 45px;
+    width: 100px;
+    border-radius: 10px;
+    background-color: #3c408a;
+    color: white;
+    border: 0px;
+}
+.btns:hover{
+    background-color: aliceblue;
+    color: #007acc;
+}
+.btnsDiv{
+    margin: 0;
+    display: flex;
+    width: 1218px;
+    
+}

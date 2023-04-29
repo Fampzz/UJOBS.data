@@ -1,0 +1,60 @@
+#cardsSec {
+  margin: 20px 30px 0px 30px;
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+.cardOferta {
+  padding: 10px;
+  border-radius: 10px;
+  background-color: #e0e0e0;
+  -webkit-filter: drop-shadow(0px 0px 10px rgba(0 0 0 / 70%));
+  filter: drop-shadow(0px 0px 10px rgba(0 0 0 / 70%));
+  width: 25%;
+}
+.cardOferdaBorder {
+  padding: 4px;
+  border-radius: 10px;
+  background-color: #007acc;
+}
+.cardOferdaInterna {
+  padding: 20px;
+  border-radius: 10px;
+  background-color: #e0e0e0;
+}
+#cardData {
+  text-align: center;
+}
+.nome {
+  text-align: center;
+}
+.CardImg {
+  width: 70%;
+  height: 70%;
+  text-align: center;
+  border-radius: 50%;
+}
+.avaliacaoS {
+  width: 30%;
+  height: 30%;
+  text-align: center;
+}
+.preco{
+  color:green
+}
+#flex-PriceLoc {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+#flex-PriceLoc ul {
+  list-style: none; 
+  padding: 0;
+  text-align: center; 
+  }
+#flex-PriceLoc ul li {
+    display: inline-block; 
+    text-decoration: none; 
+      padding: 15px;
+      display: inline-block;
+    }

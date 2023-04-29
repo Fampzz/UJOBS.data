@@ -1,80 +1,130 @@
 *{
     margin: 0;
+    padding: 0;
+    font-family: 'Rubik', sans-serif;
 }
-#menuFixo{
-    background-color: #007acc;
-    display: flex;
-    align-items: center;
 
-}
-#logoDoMenu{
-    width: 100px;
-    height: 100px;
-    margin: 15px;
-}
-#pesquisa{
-    margin: 50px;
-}
-#cardsSec{
-    margin: 200px 30px 0px 30px;
+header {
+    background-color: #007acc;
+    padding: 2px;
+  }
+  
+nav {
     display: flex;
-    justify-content: space-evenly;
-    flex-wrap: wrap;
-}
-.titulo{
-    margin: 5px;
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
+    justify-content: space-between;
     align-items: center;
-}
-.titulo::after{
-    margin-top: 3px;
-    content: "";
-    position: relative;
+  }
+
+.menu-right {
+    display: flex;
+    align-items: center;
+  }
+
+img {
+    margin: 0 auto;
     display: block;
-    height: 1px;
-    width: 100%;
-    background-color: rgb(41, 39, 40);
-}
-.dadosDoCard{
-    margin: 10px;
-    display: flex;
-    flex-direction: column;
-    align-content: flex-start;
-    flex-wrap: wrap;
-}
-.mensagemDoCard{
-    margin: 5px 10px 5px 10px;
-}
-.imgCard{
-    padding-top: 5px;
-    height: 40%;
-    display: flex;
-    justify-content: center;
-}
-.cardOferta{
-    background-color: lightslategray;
-    height: 500px;
-    width: 320px;
-    margin-left: 10px;
-    margin-right: 10px;
-    margin-bottom: 20px;
-}
+    max-width: 7%;
+    height: 7%;
+    -webkit-filter: drop-shadow(0px 0px 20px rgba(0 0 0 / 70%)); 
+    filter: drop-shadow(0px 0px 20px rgba(0 0 0 / 70%));
+  }
+  
 .btns{
     height: 45px;
     width: 100px;
     background-color: #3c408a;
     color: white;
     border: 0px;
+    border-radius: 10px
 }
 .btns:hover{
     background-color: aliceblue;
     color: #007acc;
 }
 .btnsDiv{
+    text-align: end;
     margin: 0;
     display: flex;
-    width: 1218px;
+    width: 100%;
     justify-content: space-evenly;
 }
+.cardsBox{
+    padding: 10px;
+    margin: 20px 30px 0px 30px;
+    border-radius: 10px;
+    background-color:#e0e0e0;
+    -webkit-filter: drop-shadow(0px 0px 10px rgba(0 0 0 / 70%)); 
+    filter: drop-shadow(0px 0px 10px rgba(0 0 0 / 70%));
+}
+.cardsBoxborder{
+        padding: 4px;
+        border-radius: 10px;
+        background-color:#007acc;
+    }
+.cardsBoxInterna{
+        padding: 20px;
+        border-radius: 10px;
+        background-color:#e0e0e0;
+    }
+
+#cardsSec {
+    margin: 20px 30px 0px 30px;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+  }
+  .cardOferta {
+    padding: 10px;
+    border-radius: 10px;
+    background-color: #e0e0e0;
+    -webkit-filter: drop-shadow(0px 0px 10px rgba(0 0 0 / 70%));
+    filter: drop-shadow(0px 0px 10px rgba(0 0 0 / 70%));
+    width: 25%;
+  }
+  .cardOferdaBorder {
+    padding: 4px;
+    border-radius: 10px;
+    background-color: #007acc;
+  }
+  .cardOferdaInterna {
+    padding: 20px;
+    border-radius: 10px;
+    background-color: #e0e0e0;
+  }
+  #cardData {
+    text-align: center;
+  }
+  .nome {
+    text-align: center;
+  }
+  .CardImg {
+    width: 70%;
+    height: 70%;
+    text-align: center;
+    border-radius: 50%;
+  }
+  .avaliacaoS {
+    width: 30%;
+    height: 30%;
+    text-align: center;
+  }
+  .preco{
+    color:green
+  }
+  #flex-PriceLoc {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
+  #flex-PriceLoc ul {
+    list-style: none; 
+    padding: 0;
+    text-align: center; 
+    }
+  #flex-PriceLoc ul li {
+      display: inline-block; 
+      text-decoration: none; 
+        padding: 15px;
+        display: inline-block;
+      }
+  
