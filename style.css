@@ -192,12 +192,14 @@ color: #ffffff;
   flex-direction: row;
   max-width: 60rem;
   max-height: 10rem;
+  
 }
 .card-anuncio{
   display: flex;
   background-color: #ffffff;
   padding: 1rem;
   border-radius: 10px;
+  margin-bottom:3rem;
 }
 .card-contato{
   flex-direction: row-reverse;
