@@ -7,151 +7,38 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>UJobs</title>
     <link rel="stylesheet" href="./style.css">
-    <script defer type="text/javascript" src="./script.js"></script>
+    <script defer type="text/javascript" src="./login-script.js"></script>
     <script defer src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
 
 </head>
-<!-- OQUE FALTA
-    1º fazer catalogo
-    2º fazer sistema de filtros
-    3º fazer pag de cadastro
-    4º fazer pag de recuperar senha
-    5º fazer pag de perfil
-    6º fazer pag de quem somos
--->
+
 
 <body>
-    <!-- cabeçalho -->
-    <nav class="cabecalho">
-        <div class="cabecalho-esq">
-            <a href="index.html"><img class="logo-img" src="./assets/Logos/Logo.png"></a>
-            <div class="menu-superior">
-                <nav>
-                    <a class="menu-text selecionada">Freelancers</a>
-                    <a class="menu-text">Quem somos?</a>
-                </nav>
-            </div>
+<div class="login-backgound">
+    <div class="login-pag">
+        <div class="login-pag-header">
+            <img class="login-pag-logo" src="./assets/Logos/Logo.png">
         </div>
-
-
-        <div class="btns-div dropdown">
-
-            <button class="btns btns-menu dropbtn" type="button" data-toggle="dropdown" aria-haspopup="true"
-                aria-expanded="false">Log in </button>
-            <div class="dropdown-content">
-                <form>
-                    <label for="email">Email:</label>
-                    <input type="email" id="email" name="email"><br>
-                    <label for="password">Senha:</label>
-                    <input type="password" id="password" name="password"><br>
-                    <label for="remember-me">Lembrar-me:</label>
-                    <input type="checkbox" id="remember-me" name="remember-me"><br>
-                    <input class="btns btns-login" type="submit" value="Login">
-                </form>
-
-                <a class="dropdown-item" id="singup" href="#">Sign up</a>
-                <a class="dropdown-item" id="passrecovery" href="#">Recuperar senha</a>
+        <form>
+            <div class="form-group">
+              <label for="exampleInputEmail1">Email </label>
+              <input type="email" class="form-control" id="email-login" aria-describedby="emailHelp" placeholder="Insira seu email">
+              <small id="emailHelp" class="form-text text-muted"></small>
             </div>
+            <div class="form-group">
+              <label for="exampleInputPassword1">Senha</label>
+              <input type="password" class="form-control" id="senha-login" placeholder="Senha">
+            </div>
+            <div class="login-pag-btn">
+            <button type="submit" onclick="fazerLogin()" class="btns-large btns-filtro">Log in</button><br>
+            <button type="submit" onclick="redirecionarParaPagina()"class="btns-large btns-filtro">Entre sem Log in</button>
         </div>
-    </nav>
-    <!-- fim do cabeçalho -->
-
-    <!-- Conteúdo da Pagina-->
-    <div class="conteudo">
-        <!-- filtros-->
-        <div class="side-filtros">
-            <div class="filtros">
-                <div class="presenciais">
-                    <div class="filtro-header">
-                        <p class="filtro-header-text">Presenciais</p>
-                    </div>
-                    <div class="filtro-content">
-                        <form>
-                            <label for="remember-me">Pedreiro</label>
-                            <input type="checkbox" id="filtro-pedreiro"><br>
-                            <label for="remember-me">Eletricista</label>
-                            <input type="checkbox" id="filtro-eletricista"><br>
-                            <label for="remember-me">Encanador</label>
-                            <input type="checkbox" id="filtro-encanador"><br>
-                            <label for="remember-me">Jardineiro</label>
-                            <input type="checkbox" id="filtro-Jardineiro"><br>
-
-
-                        </form>
-                        <button class="btns btns-filtro">Aplicar</button>
-                    </div>
-                </div>
-                <div class="remotos">
-                    <div class="filtro-header">
-                        <p class="filtro-header-text">Remotos</p>
-                    </div>
-                    <div class="filtro-content">
-                        <form>
-                            <label for="remember-me">Designer</label>
-                            <input type="checkbox" id="filtro-pedreiro"><br>
-                            <label for="remember-me">Desenvolvedor de sistemas</label>
-                            <input type="checkbox" id="dev"><br>
-                            <label for="remember-me">Desenvolvedor de sistemas WEB</label>
-                            <input type="checkbox" id="dev-web"><br>
-                            <label for="remember-me">Escritor de Scripts</label>
-                            <input type="checkbox" id="escritor-script"><br>
-
-
-                        </form>
-                        <button class="btns btns-filtro">Aplicar</button>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="conteudo-centro">
-
-            <div class="filtros-ativos">
-                <div class="filtro-ativo-item">
-                        <svg width="16" height="16" fill="currentColor" class="bi bi-x-circle filtro-ativo-item-icon"
-                            viewBox="0 0 16 16">
-                            <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"></path>
-                            <path
-                                d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708z">
-                            </path>
-                        </svg>
-                        <p class="filtro-ativo-item-text">Pedreiro</p>
-                </div>
-            </div>
-
-
-            <!-- fim de filtros-->
-            <!-- Anuncios-->
-            <div class="auncios" id="anunciosID">
-                <div>
-                    <div class="card-anuncio">
-                        <img class="img-card" src="./assets/ProfilePics/user1.jpg">
-                        <div class="dados-card">
-                            <p class="nome-card">Itachi uchiha</p>
-                            <p class="cargo-card">Designer</p>
-                            <div class="classificacao">
-                                <img src="./assets/Avaliationstars/star-fill.svg">
-                                <img src="./assets/Avaliationstars/star-fill.svg">
-                                <img src="./assets/Avaliationstars/star-fill.svg">
-                                <img src="./assets/Avaliationstars/star-half.svg">
-                                <img src="./assets/Avaliationstars/star.svg">
-                            </div>
-                            <p class="localizacao">Konoha</p>
-                        </div>
-                        <div class="card-contato">
-                            <button class="btns btns-card">Contrate</button>
-                            <p class="text-card-contato">Preço por hora:</p>
-                            <p class="price-card-contato">R$ 100,00</p>
-
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- fim de Anuncios-->
+          </form>
     </div>
-    <!-- Fim do conteúdo da Pagina-->
+</div>
+
 </body>
 
 </html>

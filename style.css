@@ -3,6 +3,38 @@
   margin: 0;
 }
 
+.login-backgound{
+  background-color: #d4d4d4;
+  width: 100%;
+  height: 100%;
+  padding: 50%;
+}
+.login-pag{
+  height: 28rem;
+  width: 20rem;
+  top: 50%;
+	left: 50%;
+	position: absolute;
+	transform: translate(-50%, -50%);
+  background-color: #ffffff;
+  border-radius: 10px;
+  padding: 3rem;
+}
+.login-pag-btn{
+  text-align: center;
+
+}
+.login-pag-header{
+  margin: -3rem;
+  margin-bottom: 0;
+  text-align: center;
+  background-color: #007acc;
+  border-radius: 10px 10px 0px 0px;
+}
+.login-pag-logo{
+  
+  height: 7rem;
+}
 .cabecalho {
   background-color: #007acc;
   position: relative;
@@ -62,6 +94,13 @@
 .menu-superior a:hover {
   background-color: #d4d4d4;
   color: #007acc;
+}
+.btns-large {
+  height: 2.7rem;
+  width: 10rem;
+  border: 0px;
+  border-radius: 10px;
+  transition: background 1s;
 }
 .btns {
   height: 2.7rem;
@@ -219,13 +258,6 @@ margin-bottom: -0.2rem;
   flex-direction: row;
   max-width: 34rem;
 }
-.card {
-  display: flex;
-  flex-wrap: nowrap;
-  flex-direction: row;
-  max-width: 60rem;
-  max-height: 10rem;
-}
 .card-anuncio {
   display: flex;
   background-color: #ffffff;
@@ -233,15 +265,21 @@ margin-bottom: -0.2rem;
   border-radius: 10px;
   margin-bottom: 3rem;
   justify-content: space-between;
-
+  height: 18rem;
+  width: 60rem;
+  text-align: left;
+}
+.card-content{
+  display: flex;
 }
 .card-contato {
-  flex-direction: row-reverse;
   border-radius: 0px 10px 10px 0px;
   background-color: #007acc;
+  width: 15rem;
   margin: -1rem;
   margin-left: 1rem;
   padding: 1rem;
+  text-align: center;
 }
 .img-card {
   max-width: 10rem;
