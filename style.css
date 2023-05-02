@@ -11,6 +11,43 @@
   height: 100%;
   padding: 50%;
 }
+.nos{
+  margin-top: -10rem;
+  display: flex;
+  margin-left: 9rem;
+  margin-right: 9rem;
+  justify-content: space-between;
+}
+.criadores{
+  text-align: center;
+  background-color: #007acc;
+  border-radius: 10px;
+  padding: 1rem;
+  color: #ffffff;
+  margin-bottom: 3rem;
+}
+.redescriadores{
+  display: flex;
+  justify-content: space-between;
+  padding-left:3rem;
+  padding-right: 3rem;
+}
+.redescriadores-icon{
+  transition: fill 1s;
+}
+.criadores h2{
+  margin-bottom: 1.5rem;
+}
+.criadores p{
+  margin-top: -1.5rem;
+}
+.redescriadores-icon:hover{
+  fill: #ffffff;
+}
+.nosft{
+  border-radius: 50%;
+  height: 20rem;
+}
 .login-pag{
   height: 28rem;
   width: 20rem;
