@@ -232,6 +232,8 @@ margin-bottom: -0.2rem;
   padding: 1rem;
   border-radius: 10px;
   margin-bottom: 3rem;
+  justify-content: space-between;
+
 }
 .card-contato {
   flex-direction: row-reverse;

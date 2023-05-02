@@ -60,163 +60,70 @@
 
     <!-- Conteúdo da Pagina-->
     <div class="conteudo">
-        <div class="side-filtros">
-            <!-- filtros-->
-            <div class="filtros">
-                <div class="presenciais">
-                    <div class="filtro-header">
-                        <p class="filtro-header-text">Presenciais</p>
-                    </div>
-                    <div class="filtro-content">
-                        <form>
-                            <label for="filter">Pedreiro</label>
-                            <input class="form-check-input" type="checkbox" id="filtro-pedreiro"><br>
-                            <label for="filter">Eletricista</label>
-                            <input class="form-check-input" type="checkbox" id="filtro-eletricista"><br>
-                            <label for="filter">Encanador</label>
-                            <input class="form-check-input" type="checkbox" id="filtro-encanador"><br>
-                            <label for="filter">Jardineiro</label>
-                            <input class="form-check-input" type="checkbox" id="filtro-Jardineiro"><br>
-                        </form>
-                        <button class="btns btns-filtro">Aplicar</button>
-                    </div>
+        <!-- filtros-->
+        <div class="filtros">
+            <div class="presenciais">
+                <div class="filtro-header">
+                    <p class="filtro-header-text">Presenciais</p>
                 </div>
-                <div class="remotos">
-                    <div class="filtro-header">
-                        <p class="filtro-header-text">Remotos</p>
-                    </div>
-                    <div class="filtro-content">
-                        <form>
-                            <label for="filter">Designer</label>
-                            <input class="form-check-input" type="checkbox" id="filtro-designer"><br>
-                            <label for="filter">Desenvolvedor de sistemas</label>
-                            <input class="form-check-input" type="checkbox" id="dev"><br>
-                            <label for="filter">Desenvolvedor de sistemas WEB</label>
-                            <input class="form-check-input" type="checkbox" id="dev-web"><br>
-                            <label for="filter">Escritor de Scripts</label>
-                            <input class="form-check-input" type="checkbox" id="escritor-script"><br>
-                        </form>
-                        <button class="btns btns-filtro">Aplicar</button>
-                    </div>
+                <div class="filtro-content">
+                    <form>
+                        <label for="remember-me">Pedreiro</label>
+                        <input type="checkbox" id="filtro-pedreiro"><br>
+                        <label for="remember-me">Eletricista</label>
+                        <input type="checkbox" id="filtro-eletricista"><br>
+                        <label for="remember-me">Encanador</label>
+                        <input type="checkbox" id="filtro-encanador"><br>
+                        <label for="remember-me">Jardineiro</label>
+                        <input type="checkbox" id="filtro-Jardineiro"><br>
+
+
+                    </form>
+                </div>
+            </div>
+            <div class="remotos">
+                <div class="filtro-header">
+                    <p class="filtro-header-text">Remotos</p>
+                </div>
+                <div class="filtro-content">
+                    <form>
+                        <label for="remember-me">Designer</label>
+                        <input type="checkbox" id="filtro-pedreiro"><br>
+                        <label for="remember-me">Desenvolvedor de sistemas</label>
+                        <input type="checkbox" id="dev"><br>
+                        <label for="remember-me">Desenvolvedor de sistemas WEB</label>
+                        <input type="checkbox" id="dev-web"><br>
+                        <label for="remember-me">Escritor de Scripts</label>
+                        <input type="checkbox" id="escritor-script"><br>
+
+
+                    </form>
                 </div>
             </div>
         </div>
-        <div class="conteudo-centro">
-            <div class="filtros-ativos">
-                <div class="filtro-ativo-item">
-                    <svg width="16" height="16" fill="currentColor"
-                        class="bi bi-x-circle filtro-ativo-item-icon" viewBox="0 0 16 16">
-                        <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"></path>
-                        <path
-                            d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708z">
-                        </path>
-                    </svg>
-                    <p class="filtro-ativo-item-text">Pedreiro</p>
-                </div>
-                <div class="filtro-ativo-item">
-                    <svg width="16" height="16" fill="currentColor"
-                        class="bi bi-x-circle filtro-ativo-item-icon" viewBox="0 0 16 16">
-                        <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"></path>
-                        <path
-                            d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708z">
-                        </path>
-                    </svg>
-                    <p class="filtro-ativo-item-text">Eletricista</p>
-                </div>
-            </div>
-            <!-- fim de filtros-->
-            <!-- Anuncios-->
-            <div class="auncios">
-                <div calss="card">
-                    <div class="card-anuncio">
-                        <img class="img-card" src="./assets/ProfilePics/user1.jpg">
-                        <div class="dados-card">
-                            <p class="nome-card">Itachi uchiha</p>
-                            <p class="cargo-card">Designer</p>
-                            <div class="classificacao">
-                                <img src="./assets/Avaliationstars/star-fill.svg">
-                                <img src="./assets/Avaliationstars/star-fill.svg">
-                                <img src="./assets/Avaliationstars/star-fill.svg">
-                                <img src="./assets/Avaliationstars/star-half.svg">
-                                <img src="./assets/Avaliationstars/star.svg">
-                            </div>
-                            <p class="localizacao">Konoha</p>
+        <!-- fim de filtros-->
+        <!-- Anuncios-->
+        <div class="auncios" id="anunciosID">
+            <div>
+                <div class="card-anuncio">
+                    <img class="img-card" src="./assets/ProfilePics/user1.jpg">
+                    <div class="dados-card">
+                        <p class="nome-card">Itachi uchiha</p>
+                        <p class="cargo-card">Designer</p>
+                        <div class="classificacao">
+                            <img src="./assets/Avaliationstars/star-fill.svg">
+                            <img src="./assets/Avaliationstars/star-fill.svg">
+                            <img src="./assets/Avaliationstars/star-fill.svg">
+                            <img src="./assets/Avaliationstars/star-half.svg">
+                            <img src="./assets/Avaliationstars/star.svg">
                         </div>
-                        <div class="card-contato">
-                            <button class="btns btns-card">Contrate</button>
-                            <p class="text-card-contato">Preço por hora:</p>
-                            <p class="price-card-contato">R$ 100,00</p>
-
-                        </div>
+                        <p class="localizacao">Konoha</p>
                     </div>
-                </div>
-                <div calss="card">
-                    <div class="card-anuncio">
-                        <img class="img-card" src="./assets/ProfilePics/user1.jpg">
-                        <div class="dados-card">
-                            <p class="nome-card">Itachi uchiha</p>
-                            <p class="cargo-card">Designer</p>
-                            <div class="classificacao">
-                                <img src="./assets/Avaliationstars/star-fill.svg">
-                                <img src="./assets/Avaliationstars/star-fill.svg">
-                                <img src="./assets/Avaliationstars/star-fill.svg">
-                                <img src="./assets/Avaliationstars/star-half.svg">
-                                <img src="./assets/Avaliationstars/star.svg">
-                            </div>
-                            <p class="localizacao">Konoha</p>
-                        </div>
-                        <div class="card-contato">
-                            <button class="btns btns-card">Contrate</button>
-                            <p class="text-card-contato">Preço por hora:</p>
-                            <p class="price-card-contato">R$ 100,00</p>
-
-                        </div>
-                    </div>
-                </div>
-                <div calss="card">
-                    <div class="card-anuncio">
-                        <img class="img-card" src="./assets/ProfilePics/user1.jpg">
-                        <div class="dados-card">
-                            <p class="nome-card">Itachi uchiha</p>
-                            <p class="cargo-card">Designer</p>
-                            <div class="classificacao">
-                                <img src="./assets/Avaliationstars/star-fill.svg">
-                                <img src="./assets/Avaliationstars/star-fill.svg">
-                                <img src="./assets/Avaliationstars/star-fill.svg">
-                                <img src="./assets/Avaliationstars/star-half.svg">
-                                <img src="./assets/Avaliationstars/star.svg">
-                            </div>
-                            <p class="localizacao">Konoha</p>
-                        </div>
-                        <div class="card-contato">
-                            <button class="btns btns-card">Contrate</button>
-                            <p class="text-card-contato">Preço por hora:</p>
-                            <p class="price-card-contato">R$ 100,00</p>
-
-                        </div>
-                    </div>
-                </div>
-                <div calss="card">
-                    <div class="card-anuncio">
-                        <img class="img-card" src="./assets/ProfilePics/user1.jpg">
-                        <div class="dados-card">
-                            <p class="nome-card">Itachi uchiha</p>
-                            <p class="cargo-card">Designer</p>
-                            <div class="classificacao">
-                                <img src="./assets/Avaliationstars/star-fill.svg">
-                                <img src="./assets/Avaliationstars/star-fill.svg">
-                                <img src="./assets/Avaliationstars/star-fill.svg">
-                                <img src="./assets/Avaliationstars/star-half.svg">
-                                <img src="./assets/Avaliationstars/star.svg">
-                            </div>
-                            <p class="localizacao">Konoha</p>
-                        </div>
-                        <div class="card-contato">
-                            <button class="btns btns-card">Contrate</button>
-                            <p class="text-card-contato">Preço por hora:</p>
-                            <p class="price-card-contato">R$ 100,00</p>
-
-                        </div>
+                    <div class="card-contato">
+                        <button class="btns btns-card">Contrate</button>
+                        <p class="text-card-contato">Preço por hora:</p>
+                        <p class="price-card-contato">R$ 100,00</p>
+                        >>>>>>> b652841ebb18828ba4fbd0ca0ac59cb84a91b118
                     </div>
                 </div>
             </div>
