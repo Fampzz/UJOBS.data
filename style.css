@@ -199,7 +199,8 @@ color: #ffffff;
   background-color: #ffffff;
   padding: 1rem;
   border-radius: 10px;
-  margin-bottom:3rem;
+  margin-bottom: 3rem;
+  justify-content: space-between;
 }
 .card-contato{
   flex-direction: row-reverse;
