@@ -50,7 +50,14 @@
   margin-top: 0.5rem;
   color: #d4d4d4;
 }
-
+.cardDescricaoDoSite{
+  margin: 5rem;
+  background-color: #ffffff;
+  padding: 1rem;
+  border-radius: 10px;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  font-size: large;
+}
 .conteudo {
   background-color: #d4d4d4;
 }
